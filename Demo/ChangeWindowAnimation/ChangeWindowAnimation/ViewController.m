@@ -23,7 +23,7 @@
 }
 
 - (instancetype)initWithDelegate:(id)delegate {
-    if (self = [super initWithNibName:@"ViewController1" bundle:nil]){
+    if (self = [super initWithNibName:@"ViewController" bundle:nil]){
         _delegate = delegate;
         self.view.wantsLayer = YES;
         [self.view.layer setBackgroundColor:[[NSColor cyanColor] CGColor]];

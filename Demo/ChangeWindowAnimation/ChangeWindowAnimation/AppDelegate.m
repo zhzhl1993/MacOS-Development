@@ -11,11 +11,11 @@
 
 @interface AppDelegate ()<ViewControllerDelegate> {
     
-    ViewController *_viewController1;
+    ViewController *_viewController;
 }
 
-@property (weak) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSView *windowBackView;
+@property (weak) IBOutlet NSWindow *window;
 
 @end
 
@@ -26,8 +26,8 @@
     self.window.contentView.wantsLayer = YES;
     self.window.contentView.layer.backgroundColor = [[NSColor blueColor] CGColor];
     
-    _viewController1 = [[ViewController alloc] initWithDelegate:self];
-    _viewController1.delegate = self;
+    _viewController = [[ViewController alloc] initWithDelegate:self];
+    _viewController.delegate = self;
 }
 
 
@@ -45,9 +45,9 @@
     
     //控制viewController的view页面进入
     NSRect viewFrame = NSMakeRect(windowFrame.size.width, 0, windowFrame.size.width, windowFrame.size.height);
-    [[self.window contentView] addSubview:_viewController1.view];
-    [_viewController1.view setFrame:viewFrame];
-    [self moveAnimationWithView:_viewController1.view location:windowFrame];
+    [[self.window contentView] addSubview:_viewController.view];
+    [_viewController.view setFrame:viewFrame];
+    [self moveAnimationWithView:_viewController.view location:windowFrame];
 }
 
 - (IBAction)showViewController2:(id)sender {
@@ -55,6 +55,11 @@
     
 }
 
+/**
+ * @brief 对view执行frame方面的动画，从原始位置移动到rect
+ * @param view 需要被执行动画的view
+ * @param rect view动画结束后的rect
+ */
 - (void)moveAnimationWithView:(NSView *)view location:(NSRect)rect{
     [[NSAnimationContext currentContext] setDuration:0.75];
     [[view animator] setFrame:rect];
@@ -63,10 +68,10 @@
 
 #pragma mark - ViewController1Delegate
 - (void)viewControllerWillClose:(ViewController *)viewController {
-    NSLog(@"LOG_viewController1WillClose");
+    NSLog(@"LOG_viewControllerWillClose");
     NSRect windowFrame =self.window.contentView.frame;
     NSRect viewNewFrame = NSMakeRect(windowFrame.size.width, 0, windowFrame.size.width, windowFrame.size.height);
-    [self moveAnimationWithView:_viewController1.view location:viewNewFrame];
+    [self moveAnimationWithView:_viewController.view location:viewNewFrame];
     [self moveAnimationWithView:self.windowBackView location:windowFrame];
 }
 @end
