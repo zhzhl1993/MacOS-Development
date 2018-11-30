@@ -6,13 +6,13 @@
 //  Copyright © 2018 Digiarty. All rights reserved.
 //
 
-#import "ViewController1.h"
+#import "ViewController.h"
 
-@interface ViewController1 ()
+@interface ViewController ()
 
 @end
 
-@implementation ViewController1
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,8 +34,8 @@
 
 
 - (IBAction)backAction:(id)sender {
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(viewController1WillClose:)]) {
-        [self.delegate viewController1WillClose:self];
+    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(viewControllerWillClose:)]) {
+        [self.delegate viewControllerWillClose:self];
     }
 }
 

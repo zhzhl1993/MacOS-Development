@@ -7,17 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController1.h"
+#import "ViewController.h"
 
-@interface AppDelegate ()<ViewController1Delegate> {
+@interface AppDelegate ()<ViewControllerDelegate> {
     
-    ViewController1 *_viewController1;
+    ViewController *_viewController1;
 }
 
 @property (weak) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSView *windowBackView;
 
-- (void)viewController1WillClose:(ViewController1 *)vc;
 @end
 
 @implementation AppDelegate
@@ -27,7 +26,7 @@
     self.window.contentView.wantsLayer = YES;
     self.window.contentView.layer.backgroundColor = [[NSColor blueColor] CGColor];
     
-    _viewController1 = [[ViewController1 alloc] initWithDelegate:self];
+    _viewController1 = [[ViewController alloc] initWithDelegate:self];
     _viewController1.delegate = self;
 }
 
@@ -63,7 +62,7 @@
 }
 
 #pragma mark - ViewController1Delegate
-- (void)viewController1WillClose:(ViewController1 *)viewController {
+- (void)viewControllerWillClose:(ViewController *)viewController {
     NSLog(@"LOG_viewController1WillClose");
     NSRect windowFrame =self.window.contentView.frame;
     NSRect viewNewFrame = NSMakeRect(windowFrame.size.width, 0, windowFrame.size.width, windowFrame.size.height);

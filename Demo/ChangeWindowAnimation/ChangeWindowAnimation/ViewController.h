@@ -9,14 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "AppDelegate.h"
 
-@class ViewController1;
+@class ViewController;
 
-@protocol ViewController1Delegate <NSObject>
+@protocol ViewControllerDelegate <NSObject>
 
-- (void)viewController1WillClose:(ViewController1 *)ViewController1;
+- (void)viewControllerWillClose:(ViewController *)ViewController;
 @end
 
-@interface ViewController1 : NSViewController
+@interface ViewController : NSViewController
 
 @property (nonatomic, weak) id delegate;
 
