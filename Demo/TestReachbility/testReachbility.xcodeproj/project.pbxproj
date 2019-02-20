@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F997E865221AC771002DE97C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F997E864221AC771002DE97C /* AppDelegate.m */; };
+		F997E868221AC771002DE97C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F997E867221AC771002DE97C /* main.m */; };
+		F997E86A221AC771002DE97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F997E869221AC771002DE97C /* Assets.xcassets */; };
+		F997E86D221AC771002DE97C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F997E86B221AC771002DE97C /* MainMenu.xib */; };
+		F997E876221AC77F002DE97C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F997E875221AC77F002DE97C /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		F997E878221AC790002DE97C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F997E877221AC790002DE97C /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F997E860221AC771002DE97C /* testReachbility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testReachbility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F997E863221AC771002DE97C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F997E864221AC771002DE97C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F997E867221AC771002DE97C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F997E869221AC771002DE97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F997E86C221AC771002DE97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F997E86E221AC771002DE97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F997E874221AC77F002DE97C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F997E875221AC77F002DE97C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F997E877221AC790002DE97C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F997E85D221AC771002DE97C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F997E878221AC790002DE97C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F997E857221AC771002DE97C = {
+			isa = PBXGroup;
+			children = (
+				F997E877221AC790002DE97C /* SystemConfiguration.framework */,
+				F997E862221AC771002DE97C /* testReachbility */,
+				F997E861221AC771002DE97C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F997E861221AC771002DE97C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F997E860221AC771002DE97C /* testReachbility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F997E862221AC771002DE97C /* testReachbility */ = {
+			isa = PBXGroup;
+			children = (
+				F997E874221AC77F002DE97C /* Reachability.h */,
+				F997E875221AC77F002DE97C /* Reachability.m */,
+				F997E863221AC771002DE97C /* AppDelegate.h */,
+				F997E864221AC771002DE97C /* AppDelegate.m */,
+				F997E869221AC771002DE97C /* Assets.xcassets */,
+				F997E86B221AC771002DE97C /* MainMenu.xib */,
+				F997E86E221AC771002DE97C /* Info.plist */,
+				F997E866221AC771002DE97C /* Supporting Files */,
+			);
+			path = testReachbility;
+			sourceTree = "<group>";
+		};
+		F997E866221AC771002DE97C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F997E867221AC771002DE97C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F997E85F221AC771002DE97C /* testReachbility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F997E871221AC771002DE97C /* Build configuration list for PBXNativeTarget "testReachbility" */;
+			buildPhases = (
+				F997E85C221AC771002DE97C /* Sources */,
+				F997E85D221AC771002DE97C /* Frameworks */,
+				F997E85E221AC771002DE97C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testReachbility;
+			productName = testReachbility;
+			productReference = F997E860221AC771002DE97C /* testReachbility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F997E858221AC771002DE97C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Digiarty;
+				TargetAttributes = {
+					F997E85F221AC771002DE97C = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F997E85B221AC771002DE97C /* Build configuration list for PBXProject "testReachbility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F997E857221AC771002DE97C;
+			productRefGroup = F997E861221AC771002DE97C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F997E85F221AC771002DE97C /* testReachbility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F997E85E221AC771002DE97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F997E86A221AC771002DE97C /* Assets.xcassets in Resources */,
+				F997E86D221AC771002DE97C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F997E85C221AC771002DE97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F997E868221AC771002DE97C /* main.m in Sources */,
+				F997E876221AC77F002DE97C /* Reachability.m in Sources */,
+				F997E865221AC771002DE97C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F997E86B221AC771002DE97C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F997E86C221AC771002DE97C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F997E86F221AC771002DE97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F997E870221AC771002DE97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F997E872221AC771002DE97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testReachbility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Digiarty.www.testReachbility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F997E873221AC771002DE97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testReachbility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Digiarty.www.testReachbility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F997E85B221AC771002DE97C /* Build configuration list for PBXProject "testReachbility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F997E86F221AC771002DE97C /* Debug */,
+				F997E870221AC771002DE97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F997E871221AC771002DE97C /* Build configuration list for PBXNativeTarget "testReachbility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F997E872221AC771002DE97C /* Debug */,
+				F997E873221AC771002DE97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F997E858221AC771002DE97C /* Project object */;
+}
